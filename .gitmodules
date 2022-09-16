@@ -2,3 +2,8 @@
 	path = kindr
 	url = https://github.com/ANYbotics/kindr
 	branch = master
+	    
+[submodule "champ/champ/include/champ"]
+	path = champ/champ/include/champ
+	url = https://github.com/chvmp/libchamp
+	branch = master
