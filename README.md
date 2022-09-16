@@ -2,7 +2,7 @@
 
     git clone --recursive https://github.com/NguyenCanhThanh/towbot
  
-    sudp apt install ros-melodic-grid-map-core
+    sudo apt install ros-melodic-grid-map-core
     
     sudo apt install ros-melodic-grid-map-ros
     
