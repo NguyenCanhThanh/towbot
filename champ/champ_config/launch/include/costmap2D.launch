@@ -1,0 +1,22 @@
+<launch>
+
+  <!-- <arg name="map_file" default="$(find champ_config)/maps/map.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" output="screen">
+        <rosparam file="$(arg map_file)" command="load" />
+    </node> -->
+
+  <!-- Run the costmap node, load the yaml in our directory -->
+  <node pkg="grid_map_visualization" type="grid_map_visualization" name="elevation_costmap" output="screen">
+   	<param name="grid_map_topic" value="/elevation_mapping/elevation_map" />
+    <rosparam command="load" file="$(find elevation_mapping_costmap_2d_plugin)/config/elevation_filters.yaml" />
+  </node>
+
+  <!-- 
+    Publish map to base_link tf using gyro data; 
+    This is just for testing, you can remove this node (imu_tf_node) if you have your own tf
+  -->
+  
+  <!-- Provide full connection from map to camera_link -->
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="baselink2camera" args="0.0 0.0 0 0 0 0 base_link camera_link" output="screen" />  -->
+  
+</launch>
