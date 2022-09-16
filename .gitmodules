@@ -1,0 +1,4 @@
+[submodule "kindr"]
+	path = kindr
+	url = https://github.com/ANYbotics/kindr
+	branch = master
