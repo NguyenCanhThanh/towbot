@@ -1,5 +1,5 @@
-[submodule "champ/include/champ"]
-	path = champ/include/champ
+[submodule "champ/champ/include/champ"]
+	path = champ/champ/include/champ
 	url = https://github.com/chvmp/libchamp
 	branch = master
 
